@@ -22,6 +22,40 @@ body {
     margin-right: auto;
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+.logo {
+    width: 25vw;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 225px;
+    color: white;
+    display: flex;
+    font-size: 120px;
+    align-items: center;
+    justify-content: center;
+    font-family: Norse-Bold, sans-serif;
+}
+
+.odin-logo {
+    height: 140px;
+    width: 115px;
+}
+
+.credits {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    margin-top: 575px;
+}
+
+.link {
+    color: white;
+}
+
 .sign-up {
     width: 50vw;
     height: 100vh;
@@ -73,6 +107,8 @@ form {
     border-radius: 3px;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 25px;
  }
 
  input:focus {
