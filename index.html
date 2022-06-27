@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,26 +16,45 @@
             <h4 class="line">You <em>know</em> you want to.</h4>
             <form action="">
                 <h4 class="form-line">Let's do this!</h4>
-                <label for="first_name">FIRST NAME</label>
-                <input id="first_name" type="text" name="first_name" placeholder="Thor">
-                
-                <label for="last_name">LAST NAME</label>
-                <input id="last_name" type="text" name="last_name" placeholder="Odinson">
-                
-                <label for="email">EMAIL</label>
-                <input id="email" type="email" name="email">
-                
-                <label for="phone">PHONE NUMBER</label>
-                <input id="phone" type="number" name="phone">
-                
-                <label for="password">PASSWORD</label>
-                <input id="password" type="password" name="password">
-                
-                <label for="confirm">CONFIRM PASSWORD</label>
-                <input id="confirm" type="password" name="confirm">               
+                <div class="groups">
+                    <div class="elements">
+                        <label for="first_name">FIRST NAME</label>
+                        <input id="first_name" type="text" name="first_name" placeholder="Thor">
+                    </div>
+                    
+                    <div class="elements">
+                        <label for="last_name">LAST NAME</label>
+                        <input id="last_name" type="text" name="last_name" placeholder="Odinson">
+                    </div>
+                </div>
+
+                <div class="groups">
+                    <div class="elements">
+                        <label for="email">EMAIL</label>
+                        <input id="email" type="email" name="email">
+                    </div>
+                    
+                    <div class="elements">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input id="phone" type="number" name="phone">
+                    </div>
+                </div>
+
+                <div class="groups">
+                    <div class="elements">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" type="password" name="password" onkeyup="check();">
+                        <span id="message"></span>
+                    </div>
+
+                    <div class="elements">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input id="confirm" type="password" name="confirm" onkeyup="check();">   
+                    </div>  
+                </div>          
             </form>
             <button>Create Account</button>
-            <p class="question">Already have an account? Log in</p>
+            <p class="question">Already have an account? <span style='color: #596D48'>Log in</span></p>
         </div>
     </div>
 </body>

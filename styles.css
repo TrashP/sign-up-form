@@ -10,7 +10,6 @@ body {
 .container {
     width: 75vw;
     height: 100vh;
-    max-height: ;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -50,8 +49,38 @@ form {
     height: 30vh;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+ .groups {
+    display: flex;
+    margin-bottom: 5%;
+ }
+
+ .elements {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 7%;
+ }
+
+ label {
+    font-size: 75%;
+ }
+
+ input {
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+ }
+
+ input:focus {
+    outline: none;
+    border-color: rgb(150, 150, 231);
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
+ }
 
 button {
     margin-left: 5%;
